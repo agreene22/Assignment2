@@ -10,19 +10,22 @@ using namespace std;
 int main(int argc, char **argv){
   int num = 0;
   int numberArray[10] = {};
+  int count = 0;
 
   for(int i = 0; i < 10; ++i){
     cout << "Enter up to ten positive integers (Enter a negative to stop): "; //DOES IT STOP IF A NEGATIVE IS ENTERED
     cin >> num;
     if(num >= 0){
       numberArray[i] = num;
-    } else{
+      count++;
+    }
+    else{
       break;
     }
   }
 
-  for (int i = 0; i < 10; ++i){
-    cout << numberArray[i] << endl; //DO WE PRINT THE EMPTY SPACES? IF NOT HOW DO WE DO THAT BC 0 IS nonnegative
+  for (int i = 0; i < count; ++i){
+    cout << numberArray[i] << endl; 
   }
 
   return 0;

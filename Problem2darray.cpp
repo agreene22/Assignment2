@@ -14,9 +14,17 @@ int main(int argc, char **argv){
 
   for(int i = 0; i < 4; ++i){
     for(int j = 0; j < 5; ++j){
+      cout << "Enter a number: " << endl;
       cin >> num;  //SHOULD WE BE USING A CIN OR WHAT
       a[i][j] = num;
     }
+  }
+
+  for(int i = 0; i < 4; ++i){
+    for(int j = 0; j < 5; ++j){
+      cout << a[i][j] << " ";
+    }
+    cout << endl;
   }
 
   return 0;

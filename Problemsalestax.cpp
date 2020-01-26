@@ -9,6 +9,7 @@ using namespace std;
 
 float addTax(float taxRate, float cost){
   float total;
+  taxRate /= 100;
   total = cost + (cost*taxRate);
   return total;
 }
@@ -16,9 +17,9 @@ float addTax(float taxRate, float cost){
 int main(int argc, char **argv){
 
   float cost = 10.0;
-  float taxRate = .06;
+  float taxRate = 6.0;
 
-  cout << addTax(taxRate, cost) << endl;
+  cout << "Cost after added tax: $" << addTax(taxRate, cost) << endl;
 
   return 0;
 }
