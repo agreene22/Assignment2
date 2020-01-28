@@ -20,7 +20,7 @@ void userInput(float& feet, float& inches){
 void calculate(float& feet, float& inches, float& meters, float& centimeters){
   feet += (inches/12.0);
   meters = (feet*0.3048);
-  if(meters/100 > )
+  // if(meters/100 > )
   centimeters = meters/100;
   // cout << meters << endl;
 
