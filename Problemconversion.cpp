@@ -49,14 +49,20 @@ void output(float& feet, float& inches, float& meters, float& centimeters){
 
 int main(int argc, char **argv){
 
-  float feet = 0.0; // Declaring and itializing all variables to 0
-  float inches = 0.0;
-  float meters = 0.0;
-  float centimeters = 0.0;
+  string a = "yes";
 
-  userInput(feet, inches); // Implementing user input
-  calculate(feet,inches,meters,centimeters); // Implementing calculate
-  output(feet,inches,meters,centimeters); // Implementing output
+  while(a != "no"){
+    float feet = 0.0; // Declaring and itializing all variables to 0
+    float inches = 0.0;
+    float meters = 0.0;
+    float centimeters = 0.0;
+
+    userInput(feet, inches); // Implementing user input
+    calculate(feet,inches,meters,centimeters); // Implementing calculate
+    output(feet,inches,meters,centimeters); // Implementing output
+    cout << "Would you like to do another conversion? (yes/no)" << endl;
+    cin >> a;
+  }
 
   return 0;
 }
