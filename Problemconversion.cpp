@@ -26,7 +26,7 @@ void userInput(float& feet, float& inches){
  * @param meters      [float for meters]
  * @param centimeters [float for centimeters]
  */
-void calculate(float& feet, float& inches, float& meters, float& centimeters){
+void calculate(float feet, float& inches, float& meters, float& centimeters){
   feet += (inches/12.0); // Computing inches to feet
   centimeters = (feet*0.3048*100); // Changing feet to centimeters
   while(centimeters >= 100){ // While loop to calculate the number of meters within total centimeters
